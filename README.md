@@ -34,3 +34,25 @@ Each class is in its own header with inline method definitions. This retains the
 - DHT11 bit timing is sensitive to scheduling jitter.
 - Switch events are accepted during the 20-minute warm-up.
 - CSV: `/var/log/smell.log`.
+
+## Pin assign
+
+<table>
+  <thead>
+    <tr>
+      <th>Raspberry Pi</th><th>Input Device</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1 +3.3V</td><td>MCP3002 8pin(Vdd/Vref)<br>TGS8100 V+<br>DHT110 V+</td></tr>
+    <tr><td>6 GND</td><td>MCP3002 4pin(Vss)<br>TGS8100 V-</td></tr>
+    <tr><td>19 MOSI</td><td>MCP3002 5pin (Din)</td></tr>
+    <tr><td>21 MISO</td><td>MCP3002 6pin (Dout)</td></tr>
+    <tr><td>23 SCLK</td><td>MCP3002 7pin (CLK)</td></tr>
+    <tr><td>24 Digital I/O 8(Out)</td><td>MCP3002 1pin (CS)</td></tr>
+    <tr><td>36 Digital I/O 16(Out)</td><td>TGS8100 PLUS</td></tr>
+    <tr><td>38 Digital I/O 20(Out)</td><td>DHT110 GPIO</td></tr>
+    <tr><td>40 Digital I/O 21(In)</td><td>Switch</td></tr>
+  </tbody>
+</table>
+
