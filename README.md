@@ -32,6 +32,7 @@ Each class is in its own header with inline method definitions. This retains the
 - This is **not** real-time pulse generation: Linux scheduling may extend the 2 ms PULSE limit. Verify with a scope/logic analyzer.
 - Verify the MCP3002 SPI command and ADC decode against its datasheet and your wiring before relying on measurements.
 - DHT11 bit timing is sensitive to scheduling jitter.
+- DHT11 humidity is NOT so good. This humidity sensor wouldn't use.
 - Switch events are accepted during the 20-minute warm-up.
 - CSV: `/var/log/smell.log`.
 
