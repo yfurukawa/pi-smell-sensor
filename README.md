@@ -56,3 +56,6 @@ Each class is in its own header with inline method definitions. This retains the
   </tbody>
 </table>
 
+<p align="center">
+<img src="./InputDevice_schematic.png">
+</p>
