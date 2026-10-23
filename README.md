@@ -1,6 +1,6 @@
 # Smell monitor (C++17)
 
-Raspberry Pi B+ (BCM2835), Raspberry Pi OS 32-bit.
+Raspberry Pi 4 (BCM2711), Raspberry Pi OS 64-bit.
 
 ## Build
 
